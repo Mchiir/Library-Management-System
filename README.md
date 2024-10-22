@@ -1,4 +1,4 @@
-# Welcome to Library Management System by <a href="https://github.com/Mchiir/LMS">Mchrispin</a>
+# Welcome to Library Management System by <a href="https://github.com/Mchiir/Library-Management-System/">Mchrispin</a>
 
 Technologies used: Typescript
 
@@ -13,6 +13,7 @@ Node typescript definitions i.e readline
 # Running the system
 
 cmd
+npm i
 npm run build
 
 OPEN NEW TERMINAL
