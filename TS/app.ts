@@ -1,6 +1,6 @@
-import { LibrarianRoles, StudentRoles, TeacherRoles, users } from "./roles"
+import { LibrarianRoles, StudentRoles, TeacherRoles, users } from "./static"
 import { rl } from "./readline"
-import { RolesDisplayer } from "./Services"
+import { RolesDisplayer, StudentController } from "./Services"
 
 console.log(`Welcome to library management system.`)
 console.log(`Here's available Roles:`)
@@ -17,8 +17,7 @@ rl.question('Please select your role (1, 2, 3): ', (roleNumber: string) => {
 
   switch (roleNumber) {
     case '1':
-      console.log(`Your role is now ${rolesArray[userNumber]}`)
-      RolesDisplayer(users.learner, StudentRoles)
+      StudentController(rl)
       break;
     case '2':
       console.log(`Your role is now ${rolesArray[userNumber]}`)
